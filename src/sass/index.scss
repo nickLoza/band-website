@@ -13,6 +13,9 @@ body{
 	overflow-x: hidden;
 }
 
+.main{
+	min-height: 100vh;
+}
 .spinner{
 	margin: auto;
 	margin-top: $header-height;
