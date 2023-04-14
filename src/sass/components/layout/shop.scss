@@ -1,0 +1,35 @@
+@use "../vars/vars" as *;
+
+
+.shop{
+	margin-top: $header-height;
+	min-height: calc(100vh - $header-height);
+	&__title{
+		font:{
+			size: 3rem;
+		}
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__products{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		margin: 2rem 0;
+		.product{
+			&__img{
+				max-height: 300px;
+				object-position: top;
+			}
+			&__text{
+				font-size: 1.2rem;
+				text-align: center;
+				margin-top: .5rem;
+			}
+		}
+	}
+
+}

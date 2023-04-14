@@ -1,0 +1,19 @@
+@use "./components/vars/vars" as *;
+@use "./components/reset";
+@use "./components/layout/header";
+@use "./components/layout/footer";
+@use "./components/layout/preFooter";
+@use "./components/layout/home";
+@use "./components/layout/faqs";
+@use "./components/layout/shop";
+
+
+body{
+	color: $text-color;
+	overflow-x: hidden;
+}
+
+.spinner{
+	margin: auto;
+	margin-top: $header-height;
+}

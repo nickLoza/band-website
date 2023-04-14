@@ -1,0 +1,58 @@
+@use "../vars/vars" as *;
+
+img{
+}
+.pre-footer{
+	width: 100%;
+	&__title{
+		font:{
+			size: 2.4rem;
+			weight: 700;
+		}
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__columns{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		padding: 1rem 1.5rem;
+		max-width: 1200px;
+		margin: auto;
+		.column{
+			width: 350px;
+			min-width: 150px;
+			transition: width .2s ease-in-out;
+			&__img{
+				height: 200px;
+				transition: filter $speed;
+				&:hover{
+					filter: brightness(70%);
+				}
+			}
+			&__link{
+				font-size: 1.5rem;
+				padding: .4rem .9rem;
+				outline: 1px solid #ccc;
+				margin: 1rem 0;
+				text-align: center;
+				font-weight: 500;
+				transition: outline-color .2s ease-in-out;
+				&:hover{
+					outline-color: $text-color;
+				}
+			}
+		}
+		@media screen and (max-width: 568px) {
+			flex-direction: column;
+			.column{
+				width: 100%;
+				&__link{
+					width: 9.375rem;
+					margin: .5rem auto 0;
+				}
+			}
+		}
+	}
+}
