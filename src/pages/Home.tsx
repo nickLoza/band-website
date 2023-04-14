@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import heroUrl from "../assets/videos/hero.mp4";
+import Helmet from "../components/helmet";
 
 const concertsData = [
 	{city: "Galway, Ireland", date: "april 4th, 2023"},
@@ -29,11 +30,11 @@ const albumsData = [
 
 function Home() {
 	return (
-		<>
+		<Helmet title="Home">
 			<Hero/>
 			<Concerts/>
 			<Albums/>
-		</>
+		</Helmet>
 	)
 }
 

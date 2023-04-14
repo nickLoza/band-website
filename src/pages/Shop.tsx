@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Helmet from "../components/helmet";
 import products from "../products/products"
 
 interface IShop{
@@ -25,7 +26,7 @@ function Shop({ filter }:IShop) {
 	},[filter])
 
 	return (
-		<>
+		<Helmet title={`Shop ${filter}`}>
 			<main className="shop">
 				<h1 className="shop__title">{filter}</h1>
 				<div className="shop__products">
@@ -44,7 +45,7 @@ function Shop({ filter }:IShop) {
 					))}
 				</div>
 			</main>
-		</>
+		</Helmet>
 	)
 }
 

@@ -1,3 +1,4 @@
+import Helmet from "../components/helmet"
 
 
 const faqsData = [
@@ -10,7 +11,8 @@ const faqsData = [
 
 function Faqs() {
 	return (
-		<main className="faqs">
+		<Helmet title="FAQs">
+			<main className="faqs">
 			<h2 className="faqs__title">FAQs</h2>
 			<div className="faqs__grid">
 				{faqsData.map((item, i)=>(
@@ -21,6 +23,7 @@ function Faqs() {
 				))}
 			</div>
 		</main>
+		</Helmet>
 	)
 }
 
