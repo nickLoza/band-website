@@ -21,7 +21,9 @@
 		margin: 2rem 0;
 		.product{
 			&__img{
+				min-height: 100px;
 				max-height: 300px;
+				object-fit: contain;
 				object-position: top;
 			}
 			&__text{
