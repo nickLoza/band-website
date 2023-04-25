@@ -23,13 +23,19 @@ function Footer() {
 						alt="band logo"/>
 					</a>
 					<div className="item__socials">
-						<a href="http://www.instagram.com"target="_blank"  className="item__socials-link">
+						<a href="http://www.instagram.com" 
+							target="_blank" 
+							className="item__socials-link">
 							<AiOutlineInstagram/>
 						</a>
-						<a href="http://www.spotify.com" target="_blank" className="item__socials-link">
+						<a href="http://www.spotify.com" 
+							target="_blank" 
+							className="item__socials-link">
 							<FaSpotify/>
 						</a>
-						<a href="http://www.myspace.com"target="_blank"  className="item__socials-link">
+						<a href="http://www.myspace.com" 
+							target="_blank"  
+							className="item__socials-link">
 							<SiMyspace/>
 						</a>
 					</div>

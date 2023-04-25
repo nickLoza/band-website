@@ -23,7 +23,7 @@ function Header() {
 					src="https://i.postimg.cc/jSKXJRt4/logo-pulp.webp" 
 					alt="band logo"/>
 				</a>
-				<button className="nav__toggle" onClick={onClickHandler}>
+				<button className="nav__toggle" title="toggle menu" onClick={onClickHandler}>
 					{toggle? <AiOutlineClose/> : <AiOutlineMenu/>}
 				</button>
 				<ul className={toggle? "nav__menu active" : "nav__menu"} onClick={onClickHandler}>

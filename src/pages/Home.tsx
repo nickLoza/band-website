@@ -49,9 +49,10 @@ function Hero(){
 					autoPlay
 					playsInline
 					loop
+					poster="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black_from_a_camera.jpg/1200px-Black_from_a_camera.jpg"
 					src={heroUrl}/>
 				<h1 className="hero__title">
-					Longpigs, world tour.
+					Longpigs, world tour
 				</h1>
 				<Link className="hero__link" to="/shop/tickets">
 					Buy tickets
