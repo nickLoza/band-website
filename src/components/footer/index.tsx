@@ -15,7 +15,7 @@ function Footer() {
 				<div className="footer__flex-item item">
 					<p className="item__title">INFORMATION</p>
 					<a  className="item__info"
-						href="https://github.com/nickLoza/e-commerce-clothes"
+						href="https://github.com/nickLoza/band-website"
 						target="_blank">
 						Repository <AiOutlineGithub/>
 					</a>
