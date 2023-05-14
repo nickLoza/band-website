@@ -1,4 +1,4 @@
-import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { FaSpotify } from "react-icons/fa";
 import { SiMyspace } from "react-icons/si";
 
@@ -13,8 +13,17 @@ function Footer() {
 					<p className="item__text">Refund policy</p>
 				</div>
 				<div className="footer__flex-item item">
-					<p className="item__title">SUSCRIBE</p>
-					<p className="item__text">Lorem ipsum, dolor sit amet consectetur, adipisicing elit.</p>
+					<p className="item__title">INFORMATION</p>
+					<a  className="item__info"
+						href="https://github.com/nickLoza/e-commerce-clothes"
+						target="_blank">
+						Repository <AiOutlineGithub/>
+					</a>
+					<a  className="item__info"
+						href="https://www.linkedin.com/in/nicklozadev/"
+						target="_blank">
+						Linkedin <AiOutlineLinkedin/>
+					</a>
 				</div>
 				<div className="footer__flex-item item">
 					<a href="home" className="item__logo">
